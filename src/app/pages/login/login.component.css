@@ -1,0 +1,204 @@
+.amusement{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    background-image: url('./../../../assets/images/boat.png');
+    background-position: top;
+    background-size: cover;
+}
+
+.login-0{
+    position: fixed;
+    left: 70%;
+    top: 0;
+    width: 30%;
+    padding: 40px;
+}
+
+.login-0 .la{
+    display: flex;
+    align-items: center;
+}
+
+.login-0 .la p{
+    margin: 0 0 0 10px;
+    font-size: 18px;
+    font-family: "Inter-SemiBold";
+}
+
+.login-form{
+    margin-top: 40px;
+}
+
+.login-form > p{
+    font-size: 24px;
+    font-family: "Inter-SemiBold";
+    margin: 0;
+}
+
+.login-form form{
+    margin-top: 30px;
+}
+
+.login-form form label{
+    display: block;
+    color: #333333;
+    font-size: 14px;
+}
+
+.login-form form input{
+    display: block;
+    width: 100%;
+    padding: 16px 10px;
+    margin: 10px 0 20px 0;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background-color: #F2F2F2;
+}
+
+.recovery{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.recovery p{
+    margin: 0;
+}
+
+.recovery a, .recovery a:active, .recovery a:visited,
+form .form-actions a, .form .form-actions a:active,
+ .form .form-actions a:visited{
+    color: #007AFF;
+    text-decoration: none;
+}
+
+.login-form form .form-actions{
+    margin-top: 40px;
+}
+
+.login-form form .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 16px 10px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+}
+
+.login-form form .btn span{
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.btn.btn-primary{
+    color: #FFF;
+    background-color: #007AFF;
+}
+
+.btn.btn-dark{
+    color: #FFF;
+    background-color: #333333;
+}
+
+.login-form form .form-break{
+    margin-top: 30px;
+    border: 1px solid #E5E5E5;
+}
+
+.login-form form .form-actions p{
+    margin-top: 40px;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+/*********************************************************************/
+/***************************Mobile phones*****************************/
+/*********************************************************************/
+@media only screen and (max-width: 575.98px) and (orientation:portrait) {
+/* For portrait layouts only */
+}
+
+@media only screen and (min-width: 360px) and (max-width: 575.98px) and (orientation:portrait) {
+    /* For portrait layouts only */
+    .amusement{
+        display: none;
+    }
+
+    .login-0{
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: 40px;
+    }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    /* For landscape layouts only */
+    }
+
+/*********************************************************************/
+/******************************Tablets********************************/
+/*********************************************************************/
+@media only screen and (min-width: 576px) and (max-width: 991.98px){
+    /*All tablets */
+    .amusement{
+        display: none;
+    }
+
+    .login-0{
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 50%;
+        margin: 10% auto;
+        padding: 40px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (orientation:portrait){
+    /*small pablets */
+
+}
+
+@media only screen and (min-width: 768px) {
+    /*specific pablets */
+}
+
+@media only screen and (max-width: 767.98px) {
+    /*specific pablets */
+}
+
+@media only screen and (max-width: 991.98px) {
+    /*specific pablets */
+}
+
+
+/*********************************************************************/
+/***************************Small Laptops*****************************/
+/*********************************************************************/
+@media only screen and (min-width: 992px)and (max-width: 1199.98px) {
+    /* All small laptops*/
+
+}
+
+
+
+/*********************************************************************/
+/**********************Bigger screens/smart TVs***********************/
+/*********************************************************************/
+@media only screen and (min-width: 1200px) {
+    .login-0 .la{
+        margin-top: 70px;
+    }
+}
+ 

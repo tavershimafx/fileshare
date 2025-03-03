@@ -1,0 +1,13 @@
+<div class="text-contain" #textEl [@shakeX]="showValidation">
+    <div class="text-element" [ngClass]="validationClass" #textEl>
+        <input #inputEl
+        [type]="type" 
+        [placeholder]="placeholder"  
+        [(ngModel)]="value"
+        (ngModelChange)="inputChanged()"
+        />
+         <i *ngIf="type == 'password'" class="fa fa-eye-slash password-eye" (click)="showPassword($event)"></i>
+         <i *ngIf="type != 'password' && value != ''" class="fa-solid fa-circle-xmark clear-input" (click)="clearInput()"></i> 
+    </div>
+    <p *ngIf="showValidation && validationMessage && validationMessage != ''" class="danger">{{validationMessage}}</p>     
+</div>

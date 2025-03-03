@@ -1,0 +1,55 @@
+.text-contain{
+    margin: 10px 0 20px 0;
+}
+
+.text-contain p.danger{
+    margin: 0;
+    color: #FF3B30;
+    font-size: 12px;
+}
+
+.text-element{
+    display: block;
+    width: 100%;
+    padding: 0;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background-color: #F2F2F2;
+}
+
+.text-element input{
+    display: inline-block;
+    width: 100%;
+    padding: 16px 10px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.text-element.danger input{
+    color: #FF3B30;
+}
+
+.text-element.danger{
+    outline: 1px solid #FF3B30;
+}
+
+.text-element.info{
+    color: #333333;
+    outline: 1px solid #0055B2;
+}
+
+.text-element.success{
+    color: #333333;
+    outline: 1px solid #1B850A;
+}
+
+.text-element.warning{
+    outline: 1px solid #FF9500;
+}
+
+.text-element.warning input{
+    color: #FF9500;
+}
