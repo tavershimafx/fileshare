@@ -1,7 +1,6 @@
 import { Component, ElementRef, Input, ViewChild, forwardRef  } from '@angular/core';
-import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { trigger, transition, useAnimation } from '@angular/animations';
-import { shakeX } from 'ng-animate';
+import { NG_VALUE_ACCESSOR} from '@angular/forms';
+import { CustomFormControl } from 'src/app/shared/control.extensions';
 
 export const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any = {
   provide: NG_VALUE_ACCESSOR,
@@ -13,18 +12,12 @@ export const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any = {
   selector: 'text-input',
   templateUrl: './text-input.component.html',
   styleUrls: ['./text-input.component.css'],
-  providers: [CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
-    animations: [
-      trigger('shakeX', [transition('* => *', useAnimation(shakeX,
-        {
-          // Set the duration to 5seconds and delay to 2seconds
-          params: { timing: 1, delay: 0 }}
-      ))])
-    ],
+  providers: [CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
 })
-export class TextInputComponent  {
+export class TextInputComponent {
 
   constructor(){
+   
   }
 
   /**
@@ -43,14 +36,14 @@ export class TextInputComponent  {
   @Input() validationClass?: string | "danger" | "success" | "info" | "warning" | null
 
   /**
-   * A validation message to display to the user if any
-   */
-  @Input() validationMessage?: string
-
-  /**
    * Determines if validation messages and symbols should be displayed
    */
   @Input() showValidation?: boolean = false
+
+  /**
+   * The referenced form control
+   */
+  @Input() control?: CustomFormControl
 
   /**
    * The input element
@@ -125,7 +118,8 @@ export class TextInputComponent  {
   }
 
   inputChanged(){
-    this.showValidation = false
-    this.inputEl.nativeElement.attributes.remove("[@shakeX]")
+    if(!this.validationClass){
+      this.validationClass = this.control?.errors? "danger" : "success"
+    }
   }
 }

@@ -1,5 +1,5 @@
-<div class="text-contain" #textEl [@shakeX]="showValidation">
-    <div class="text-element" [ngClass]="validationClass" #textEl>
+<div class="text-contain" #textEl [ngClass]="{'shake': showValidation && !control!.valid}">
+    <div class="text-element" class="{{ showValidation && !control!.valid? 'danger' : validationClass}}">
         <input #inputEl
         [type]="type" 
         [placeholder]="placeholder"  
@@ -9,5 +9,5 @@
          <i *ngIf="type == 'password'" class="fa fa-eye-slash password-eye" (click)="showPassword($event)"></i>
          <i *ngIf="type != 'password' && value != ''" class="fa-solid fa-circle-xmark clear-input" (click)="clearInput()"></i> 
     </div>
-    <p *ngIf="showValidation && validationMessage && validationMessage != ''" class="danger">{{validationMessage}}</p>     
+    <p *ngIf="showValidation && !control!.valid" class="danger">{{control!.getValidationMessages().join(",")}}</p>     
 </div>
