@@ -9,5 +9,5 @@
          <i *ngIf="type == 'password'" class="fa fa-eye-slash password-eye" (click)="showPassword($event)"></i>
          <i *ngIf="type != 'password' && value != ''" class="fa-solid fa-circle-xmark clear-input" (click)="clearInput()"></i> 
     </div>
-    <p *ngIf="showValidation && !control!.valid" class="danger">{{control!.getValidationMessages().join(",")}}</p>     
+    <p *ngIf="showValidation && !control!.valid" class="text-danger">{{control!.getValidationMessages().join(",")}}</p>     
 </div>

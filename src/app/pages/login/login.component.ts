@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { CustomFormControl, CustomFormGroup } from 'src/app/shared/control.extensions';
 
 @Component({
@@ -8,7 +9,7 @@ import { CustomFormControl, CustomFormGroup } from 'src/app/shared/control.exten
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  constructor(){
+  constructor(private router: Router){
     this.loginForm.valueChanges.subscribe({
       next: (e) =>{
         this.isSubmitting = false
@@ -26,7 +27,9 @@ export class LoginComponent {
   submitLogin(){
     this.isSubmitting = true
     if(!this.loginForm.valid){
-      
+      return
     }
+
+    this.router.navigateByUrl("/dashboard/file-manager")
   }
 }

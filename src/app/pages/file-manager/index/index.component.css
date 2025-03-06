@@ -1,0 +1,197 @@
+.drive-info{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    margin-top: 20px;
+}
+
+.drive-info .info-card{
+    padding: 20px;
+    width: 100%;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.drive-info .info-card p{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.drive-info h2{
+    font-size: 42px;
+    color: #bdbdbd;
+    margin: 10px 0;
+}
+
+.drive-info .progress{
+    width: 100%;
+    height: 8px;
+    background-color: #f7f7f7;
+}
+
+.drive-info .progress .indicator{
+    height: 100%;
+    width: 50%;
+}
+
+.table-responsive{
+    width: 100%;
+    margin-top: 50px;
+    overflow-x: scroll;
+}
+
+.upload-btn .btn{
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #2BB2FE;
+    border-radius: 20px;
+    padding: 10px 25px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.upload-btn .btn span{
+    margin-right: 10px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tbody tr, table thead tr{
+    display: table-row;
+    width: 100%;
+    background-color: #FFF;
+    border-bottom: 7px solid #F9F9FC;
+    transition: all 0.5s ease;
+}
+
+table tbody tr:hover{
+    cursor: pointer;
+    transform:scale(1.05)
+}
+
+table thead th{
+    font-size: 14px;
+    color: #1A1A1A;
+    padding: 15px 10px;
+    font-family: 'Inter-Light';
+    text-align: left;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+table thead th:nth-child(1){
+    width: 50%;
+}
+
+table thead th:nth-child(2){
+    width: 20%;
+}
+
+table thead th:nth-child(3){
+    width: 20%;
+}
+
+table thead th:nth-child(4){
+    width: 10%;
+}
+
+table tbody tr td:first-child{
+    border-radius: 5px 0 0 5px;
+}
+
+table tbody tr td:last-child{
+    border-radius: 0 5px 5px 0;
+}
+
+table tbody td{
+    display: table-cell;
+    padding: 15px 10px;
+    margin: 5px 0;
+    color: #1A1A1A;
+    font-size: 14px;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+table tbody td span i{
+    font-size: 18px;
+}
+
+table tbody td span i.fa-folder{
+    color: #667085;
+}
+
+table tbody td span i.fa-file-pdf{
+    color: #EB3D4D;
+}
+
+table tbody td span i.fa-file-excel{
+    color: #1A9882;
+}
+
+table tbody td span i.fa-image{
+    color: #F86624;
+}
+
+table tbody td span i.fa-file-lines{
+    color: #2BB2FE;
+}
+
+table tbody td span{
+    margin-right: 10px;
+}
+
+dialog-box .upload-container{
+    padding: 20px;
+}
+
+dialog-box .upload-area{
+    border: 1px dashed #E0E2E7;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    background-color: #F9F9FC;
+}
+
+dialog-box .upload-area p{
+    margin: 10px 0;
+}
+
+dialog-box .upload-area button{
+    outline: 0;
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: #883DCF;
+    background-color: #F4ECFB;
+    font-size: 14px;
+}
+
+/*********************************************************************/
+/***************************Mobile phones*****************************/
+/*********************************************************************/
+@media only screen and (max-width: 575.98px) and (orientation:portrait) {
+/* For portrait layouts only */
+    .drive-info{
+        display: flex;
+        row-gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .drive-info .info-card{
+        width: 48%;
+    }
+
+    table tbody tr td{
+        /* text-overflow: clip; */
+        word-break: keep-all;
+        white-space: nowrap;
+    }
+}

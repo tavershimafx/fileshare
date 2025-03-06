@@ -65,17 +65,60 @@ i.clear-input{
     color: #5F6577;
 }
 
-.expand-down{
-    display: block !important;
-    animation-name: slideIn;
+
+/*******************************************************************************/
+/***********************************Colors**************************************/
+/*******************************************************************************/
+.primary{
+    background-color: #883DCF;
 }
-.collapse-up{
-    display: none !important;
-    animation-name: slideOut;
+
+.primary-light{
+    background-color: #F4ECFB;
+}
+
+.secondary{
+    background-color: #F86624;
+}
+
+.secondary-light{
+    background-color: #FFF0EA;
+}
+
+.info{
+    background-color: #2BB2FE;
+}
+
+.info-light{
+    background-color: #EAF8FF;
+}
+
+.default{
+    background-color: #667085;
+}
+
+.default-light{
+    background-color: #F0F1F3;
+}
+
+.danger{
+    background-color: #EB3D4D;
+}
+
+.danger-light{
+    background-color: #FEECEE;
+}
+
+.success{
+    background-color: #1A9882;
+}
+
+.success-light{
+    background-color: #E9FAF7;
 }
 
 /*******************************************************************************/
-/*******************************Animations**************************************/
+/*********************************Animations************************************/
 /*******************************************************************************/
 
 .shake {

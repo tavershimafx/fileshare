@@ -1,4 +1,5 @@
 import { Component} from '@angular/core';
+import { SidebarService } from 'src/app/shared/services/sidebar.service';
 
 @Component({
   selector: 'top-nav',
@@ -7,8 +8,11 @@ import { Component} from '@angular/core';
 })
 export class TopNavComponent {
 
-  constructor(){
+  constructor(private sidebarService: SidebarService){
    
   }
 
+  toggleSidbar(){
+    this.sidebarService.toggleSidebar()
+  }
 }

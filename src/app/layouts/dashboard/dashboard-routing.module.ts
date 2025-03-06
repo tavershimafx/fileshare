@@ -4,7 +4,7 @@ import { DashboardLayoutComponent } from './dashboard-layout.component';
 
 const routes: Routes = [
   { path: '', component: DashboardLayoutComponent, children:[
-
+    { path: 'file-manager', loadChildren: () => import("../../pages/file-manager/file-manager.module").then(k => k.FileManagerModule)}
   ]}
 ]
 

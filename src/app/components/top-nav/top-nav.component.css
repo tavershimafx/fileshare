@@ -5,11 +5,15 @@
     padding: 20px;
 }
 
+.sidebar-mobile{
+    display: none;
+}
+
 .search-input{
     border: 1px solid #E0E2E7;
     border-radius: 5px;
     padding: 5px 10px;
-    min-width: 500px;
+    width: 500px;
 }
 
 .search-input span{
@@ -94,4 +98,68 @@
     margin-left: 10px;
     font-size: 14px;
     color: #4A4C56;
+}
+
+/*********************************************************************/
+/***************************Mobile phones*****************************/
+/*********************************************************************/
+@media only screen and (max-width: 575.98px) and (orientation:portrait) {
+/* For portrait layouts only */
+    .dashboard aside{
+        display: none;
+    }
+
+    .dashboard .main-section{
+        width: 100%;
+        left: 0;
+    }
+
+    .sidebar-mobile{
+        display: block;
+    }
+
+    .search-input{
+        width: 200px;
+        max-width: 200px !important;
+    }
+
+    .user-notify nav, .user-notify .division,
+    .user-notify .user .content div, .user-notify .user .content span,
+     .search-input span{
+        display: none;
+    }
+
+    .user-notify .user .content img{
+        margin-right: 0;
+    }
+}
+
+/*********************************************************************/
+/******************************Tablets********************************/
+/*********************************************************************/
+@media only screen and (min-width: 576px) and (max-width: 991.98px){
+    /*All tablets */
+    .sidebar-mobile{
+        display: block;
+    }
+
+    .search-input{
+        width: 350px;
+        max-width: 350px !important;
+    }
+
+    .user-notify nav, .user-notify .division{
+        display: none;
+    }
+}
+
+/*********************************************************************/
+/***************************Small Laptops*****************************/
+/*********************************************************************/
+@media only screen and (min-width: 992px)and (max-width: 1199.98px) {
+    /* All small laptops*/
+    .search-input{
+        width: 350px;
+        max-width: 350px !important;
+    }
 }

@@ -9,6 +9,7 @@ import { DropdownDirective } from '../directives/dropdown.directive';
 import { SideBarItemDirective } from '../directives/sidebar-item.directive';
 import { BreadcrumbComponent } from '../components/breadcrumb/breadcrumb.component';
 import { RouterModule } from '@angular/router';
+import { DialogComponent } from '../components/dialog/dialog.component';
 
 const components = [
     TextInputComponent,
@@ -17,7 +18,8 @@ const components = [
     TopNavComponent,
     DropdownDirective,
     SideBarItemDirective,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    DialogComponent
   ]
 @NgModule({
   declarations: components,

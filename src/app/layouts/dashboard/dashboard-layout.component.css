@@ -13,6 +13,8 @@
     top: 0;
     height: 100%;
     width: 18%;
+    z-index: 10;
+    outline: none;
     background-color: #FFF;
     margin-right: 1px solid #E0E2E7;
 }
@@ -25,3 +27,108 @@
     width: 82%;
     background-color: #F9F9FC;
 }
+
+.main-section .dashboard-view{
+    padding: 20px 20px 100px 20px;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+/*********************************************************************/
+/***************************Mobile phones*****************************/
+/*********************************************************************/
+@media only screen and (max-width: 575.98px) and (orientation:portrait) {
+/* For portrait layouts only */
+    .dashboard aside{
+        position: absolute;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100%;
+        display: block;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .dashboard .main-section{
+        width: 100%;
+        left: 0;
+    }
+    
+    .dashboard aside.sidebar-in{
+        left: 0;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 575.98px) and (orientation:portrait) {
+    /* For portrait layouts only */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+/* For landscape layouts only */
+}
+
+/*********************************************************************/
+/******************************Tablets********************************/
+/*********************************************************************/
+@media only screen and (min-width: 576px) and (max-width: 991.98px){
+    /*All tablets */
+    .dashboard aside{
+        position: absolute;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100%;
+        display: block;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .dashboard aside.sidebar-in{
+        left: 0;
+    }
+
+    .dashboard .main-section{
+        width: 100%;
+        left: 0;
+    }
+}
+
+@media only screen and (min-width: 576px) and (orientation:portrait){
+    /*small pablets */
+
+}
+
+@media only screen and (min-width: 768px) {
+    /*specific pablets */
+}
+
+@media only screen and (max-width: 767.98px) {
+    /*specific pablets */
+}
+
+@media only screen and (max-width: 991.98px) {
+    /*specific pablets like iPad mini*/
+    
+}
+
+
+/*********************************************************************/
+/***************************Small Laptops*****************************/
+/*********************************************************************/
+@media only screen and (min-width: 992px)and (max-width: 1199.98px) {
+    /* All small laptops*/
+    .dashboard aside{
+        width: 24%;
+    }
+
+    .dashboard .main-section{
+        width: 76%;
+        left: 24%;
+    }
+}
+
+
+
+/*********************************************************************/
+/**********************Bigger screens/smart TVs***********************/
+/*********************************************************************/
+@media only screen and (min-width: 1200px) {}
