@@ -65,10 +65,17 @@ i.clear-input{
     color: #5F6577;
 }
 
-
+.expand-down{
+    display: block !important;
+    animation-name: slideIn;
+}
+.collapse-up{
+    display: none !important;
+    animation-name: slideOut;
+}
 
 /*******************************************************************************/
-/*******************************animations**************************************/
+/*******************************Animations**************************************/
 /*******************************************************************************/
 
 .shake {
@@ -95,3 +102,25 @@ i.clear-input{
       transform: translate3d(4px, 0, 0);
     }
   }
+/* 
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        position: relative;
+        transform: translateY(0);
+    } 
+    to {
+        position: relative;
+        transform: translateY(-100%);
+    }
+} */

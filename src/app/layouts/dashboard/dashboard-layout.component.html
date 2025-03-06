@@ -1,1 +1,13 @@
-<router-outlet></router-outlet>
+<!--https://www.figma.com/design/11uyI9BGy7ey2UeBgChGee/Pixlab-Admin-Dashboard-UI-Kit-(Community)?node-id=0-1&p=f&t=9soox0NnPBmfOE9m-0-->
+<section class="dashboard">
+    <aside>
+        <left-nav></left-nav>
+    </aside>
+    <div class="main-section">
+        <top-nav></top-nav>
+        <breadcrumb title="Product"></breadcrumb>
+        <nav class="dashboard-view">
+            <router-outlet></router-outlet>
+        </nav>
+    </div>
+</section>

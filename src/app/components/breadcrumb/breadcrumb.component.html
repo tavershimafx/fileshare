@@ -1,0 +1,15 @@
+<div class="breadcrumb">
+    <div class="crubm-left">
+        <h1>{{title}}</h1>
+        <ul>
+            <li *ngFor="let item of items; let i = index" class="active">
+                <a *ngIf="i != items!.length - 1" [routerLink]="item?.link">{{item?.text}}</a>
+                <span *ngIf="i == items!.length - 1">{{item?.text}}</span>
+                <span *ngIf="i != items!.length - 1"><i class="fa fa-chevron-right"></i></span>
+            </li>
+        </ul>
+    </div>
+    <div class="crubm-right">
+        <ng-content></ng-content>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+.dashboard{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard aside{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 18%;
+    background-color: #FFF;
+    margin-right: 1px solid #E0E2E7;
+}
+
+.dashboard .main-section{
+    position: fixed;
+    top: 0;
+    left: 18%;
+    height: 100%;
+    width: 82%;
+    background-color: #F9F9FC;
+}

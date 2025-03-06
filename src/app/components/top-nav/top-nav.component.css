@@ -1,0 +1,97 @@
+.nav-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.search-input{
+    border: 1px solid #E0E2E7;
+    border-radius: 5px;
+    padding: 5px 10px;
+    min-width: 500px;
+}
+
+.search-input span{
+    margin-right: 10px;
+    color: #4A4C56;
+}
+
+.search-input input{
+   outline: none;
+   background-color: transparent;
+   border: none;  
+   padding: 5px;  
+   font-size: 14px;
+   width: 90%;
+}
+
+.user-notify{
+    display: flex;
+    align-items: center;
+}
+
+.user-notify .division{
+    margin: 0 20px;
+    width: 1px;
+    height: 40px;
+    background-color: #E0E2E7;
+}
+
+.user-notify nav{
+  display: inline-block;
+}
+
+.user-notify nav ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.user-notify nav ul li{
+    display: inline-block;
+    margin-left: 15px;
+    padding: 9px;
+}
+
+.user-notify nav ul li i{
+    font-size: 14px;
+}
+
+.user-notify .user{
+    display: inline-block;
+}
+
+.user-notify .user .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-notify .user img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 10px;
+
+}
+
+.user-notify .user .content p{
+    margin: 0;
+}
+
+.user-notify .user .content p.name{
+    font-family: 'Inter-SemiBold';
+    font-size: 14px;
+}
+
+.user-notify .user .content p.role{
+    font-size: 12px;
+    color: #4A4C56;
+}
+
+.user-notify .user .content span{
+    margin-left: 10px;
+    font-size: 14px;
+    color: #4A4C56;
+}
